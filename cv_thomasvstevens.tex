@@ -1,0 +1,189 @@
+% Copyright (C) 2004-2014 Jason R. Blevins <jrblevin@sdf.org>
+% http://jblevins.org/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{rotating}
+\setlength\columnsep{16pt}
+\DeclareGraphicsExtensions{.png}
+
+% Fonts
+\usepackage[T1]{fontenc}
+
+% Set your name here
+\def\name{Thomas V. Stevens}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = magenta,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: CV},
+  pdfsubject = {CV},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  right=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\scshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs. Small paragraph skip. Set spacing.
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.15em}
+\spacing{1}
+
+% Define bullets and spacing of lists
+\setlist[itemize,1]{leftmargin=0em,itemsep=0.15em,parsep=0.15em,label={}}
+\setlist[itemize,2]{leftmargin=0em,itemsep=0.15em,parsep=0.15em,label={}}
+\setlist[itemize,3]{leftmargin=0em,itemsep=0em,parsep=0em,label={}}
+\setlist[itemize,4]{leftmargin=1.5em,itemsep=0em,parsep=0em,label={}}
+
+\begin{document}
+
+{\huge \name}
+
+\begin{multicols}{3}
+    $\vcenter{\hbox{\includegraphics[width=12pt,height=12pt,keepaspectratio=true]{gmail}}}$
+    \href{mailto:thomasvstevens@gmail.com}{thomasvstevens@gmail.com} \\
+    $\vcenter{\hbox{\includegraphics[width=12pt,height=12pt,keepaspectratio=true]{linkedin}}}$
+    \href{http://www.linkedin.com/in/thomasvstevens}{linkedin.com/in/thomasvstevens}\\
+    $\vcenter{\hbox{\includegraphics[width=12pt,height=12pt,keepaspectratio=true]{octocat}}}$
+    \href{http://thomasvstevens.github.io}{thomasvstevens.github.io}
+    \vfill\columnbreak
+    210 Dorland St.\\
+    San Francisco, CA 94114 \\
+    (615) 512-0695
+    \vfill\columnbreak
+    % [ empty column ]
+\end{multicols}
+\par\nopagebreak\smallskip\hrule\medskip
+
+{\Large\textsc{Education}}
+\begin{itemize}
+    % Received June 13, 2014
+  \item {\bf M.S.} Biophysics. University of California, San Francisco (UCSF). \hfill{Jun 2014}
+    \begin{itemize}[leftmargin=1.5em]
+    \item \emph{Award:} NSF Graduate Research Fellowship in Computational Biology. \hfill{\emph{GPA }4.00/4} 
+    \end{itemize}
+  \item {\bf B.S.} Applied Mathematics. Washington University in St.~Louis. \hfill{May 2010}
+    \begin{itemize}[leftmargin=1.5em]
+    \item \emph{Summa Cum Laude}. \hfill{\emph{GPA }3.90/4}
+    \end{itemize}
+\end{itemize}
+\begin{multicols}{2}
+    \begin{center}{\bf\textsc{Skills}}\end{center}
+    \textsc{Languages:} Python (5 years), Java (2 years)\\
+    \textsc{Tools:} bash, Linux, Vizualization ({\small MATLAB, R})\\
+    \textsc{Theory:} Algorithms, Machine Learning, Statistics
+    \vfill\columnbreak
+    \begin{center}{\bf\textsc{CS Courses}}, self-directed (2014-5)\end{center}
+    Stanford: CS161 Design and Analysis of Algorithms\\
+    Coursera: Machine Learning, Cryptography, Mining Massive Datasets (statements of accomplishment)
+\end{multicols}
+
+{\Large\textsc{Experience}} \smallbreak
+\begin{minipage}{0.05\textwidth}
+    \begin{sideways}\textsc{Industry}\end{sideways}
+\end{minipage}
+\begin{minipage}{0.95\textwidth}
+    \begin{itemize}
+        \item \textbf{Bolt Threads}, \emph{Emeryville, CA}. \href{http://www.boltthreads.com}{boltthreads.com} \hfill{Oct 2014 - present}\\
+              \underline{Scientist} (current), Senior Research Associate (1 year), Research Associate (6 months)
+              \begin{itemize}
+                   \item Automated 1000s of design tasks with \href{http://www.github.com/thomasvstevens/delta-design}{object-oriented Python} that interacts with local and web apps.
+                         \begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em]
+                         \item Saved 80 work hours for another research associate. Results improved product purity 3-fold. 
+                         \end{itemize}
+                   \item Optimized a screening assay to call ``hits'' with superior \emph{AUC} and 10-fold greater throughput.
+                         \begin{itemize}[leftmargin=1.5em,itemsep=0em,parsep=0em]
+                         \item Led an internship project that screened 50k strains in parallel for increased material production.
+                         \item Exposed a previously unknown production bottleneck through characterization of rare hits.
+                         \end{itemize}
+                   \item Accelerated a \href{http://www.github.com/thomasvstevens/seq-tools}{sequence verification tool} from quadratic to linear time in 2 parameters with \emph{numpy}. \\
+                         Replaced scoring 10k random samples with 1 greedy \emph{DP} run to find nonrepetitive protein encodings.
+              \end{itemize}
+        \item \textbf{Data Science Workshop} (CDIPS), \emph{UC Berkeley} \hfill{Jul - Aug 2014}
+            \begin{itemize}
+                \item \emph{Project: Classify prohibited content on the ad website avito.ru (via Kaggle).} Mentor from LinkedIn.
+                \begin{itemize}
+                    \item Developed NLP and large-scale ML approaches to learn from 4M ads with a 3GB text corpus.
+                    \item Used Python libraries \emph{(sklearn, pandas, nltk)} for end-to-end workflow:
+                    \begin{itemize}
+                        \item feature selection, document transforms, model fitting, cross-validation, and diagnostics.
+                    \end{itemize}
+                    \item Exceeded the best predictions of the submitting company. Presented findings to teams and mentors.
+                \end{itemize}
+            \end{itemize}
+    \end{itemize}
+    \par\nopagebreak\smallskip\hrule\smallskip
+\end{minipage}
+\begin{minipage}{0.05\textwidth}
+    \begin{sideways}\textsc{Academic}\end{sideways}
+\end{minipage}
+\begin{minipage}{0.95\textwidth}
+    \begin{itemize}
+        \item \textbf{Wendell A. Lim Lab}, \emph{UCSF, HHMI}. \href{http://limlab.ucsf.edu}{limlab.ucsf.edu} \hfill{Jun 2012 - Jun 2014}\\
+              \underline{Graduate Student} (2 years), UCSF Integrative Program in Quantitative Biology (iPQB)
+        \begin{itemize}
+            \item \emph{Project: ``Defining the Ras/PI3K cell fate code via open-loop dynamic inputs.''}
+            \begin{itemize}
+                \item Built an analysis pipeline in the cloud {\small \textit{(EC2)}} for time series next-generation sequencing data.
+                \item Performed dimensionality reduction, clustering, and vizualization in {\small \textit{MATLAB}}.
+                \item Discovered a response space elicited by synthetic input alone (light-gated signaling protein interaction).
+                \item Presented results to initiate a collaboration with a computational lab at Columbia University.
+            \end{itemize}
+            \item \emph{Project: ``Computational design of an orthogonal input to immune cytokine signaling.''}
+            \begin{itemize}
+                \item Scripted the \emph{Rosetta} software suite to screen new protein interfaces insulated from native signals.
+                \item Parallelized jobs with \emph{Grid Engine} in a distributed environment. Visualized output with \emph{matplotlib}.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\medbreak
+\end{minipage}
+{\Large\textsc{Leadership}} \smallbreak
+\begin{itemize}
+    \item Mentored a 10-student undergraduate biology team (iGEM 2013): advanced to international finals.
+    \begin{itemize}[leftmargin=1.5em]
+          \item Published as: Ji, Lee, Wong, et al. ``Specific Gene Repression by CRISPRi System Transferred through Bacterial Conjugation.'' \emph{ACS Synth Bio.}, 2014.
+    \end{itemize}
+    \item Teaching assistant for UCSF Systems Bio graduate course: bioinformatics team project lab (Fall 2012).
+    \item Organized a graduate \href{https://sites.google.com/site/ipqbbootcamp2012/systems-biology}{``Bootcamp'' module}. Delivered lectures and a Python modeling lab (Fall 2012).
+\end{itemize}
+
+\end{document}
